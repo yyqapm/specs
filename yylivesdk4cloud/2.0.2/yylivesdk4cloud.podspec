@@ -72,9 +72,7 @@ audio.dependency 'avtranssdk', '1.7.18'
 audio.dependency 'gslbsdki', '1.3.2'
 audio.dependency 'openssl', '111.6717.0'
 		audio.requires_arc = true
-                audio.frameworks = 'AudioToolbox'
-                audio.frameworks = 'CoreMedia'
-                audio.frameworks = 'AVFoundation'
+                audio.frameworks = 'AudioToolbox', 'CoreMedia', 'AVFoundation'
 		audio.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/yylivesdk4cloud/libs"' }
 		audio.source_files = 'include/yylivesdk4cloud-audio/*.h'
 		audio.vendored_libraries = 'libs/libyylivesdk4cloud-audio.a'
