@@ -30,6 +30,7 @@ full.dependency 'orangefilter/orangefilter_static-all_no_ar', '4.1.5'
 full.dependency 'yyservicesdk/yyservicesdk', '2.2.2'
 full.dependency 'yyvideolib/yyvideolibstatic', '3.9.50'
 		full.requires_arc = true
+                full.frameworks = 'VideoToolbox'
 		full.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/yylivesdk4cloud/libs"' }
 		full.source_files = 'include/yylivesdk4cloud/*.h'
 		full.vendored_libraries = 'libs/libyylivesdk4cloud.a'
