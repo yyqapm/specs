@@ -55,9 +55,7 @@ dy.dependency 'yyservicesdk/yyservicesdk', '2.2.2'
 		ydaudio.ios.deployment_target = '4.3'
 		
 		ydaudio.requires_arc = true
-                ydaudio.frameworks = 'AudioToolbox'
-                ydaudio.frameworks = 'CoreMedia'
-                ydaudio.frameworks = 'AVFoundation'
+                ydaudio.frameworks = 'AudioToolbox', 'CoreMedia', 'AVFoundation'
 		ydaudio.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
 		ydaudio.preserve_paths  = 'libs/yylivesdk4clouddynamicaudio/yylivesdk4clouddynamicaudio.framework'
 		ydaudio.ios.vendored_frameworks = 'libs/yylivesdk4clouddynamicaudio.framework'
