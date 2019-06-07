@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
 
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/libyuv/include', 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/libyuv/libs" }
 
-	s.source_files		= 'include/**/*.h','include/*.h'
 	s.header_mappings_dir = 'include'
 	s.vendored_library = 'libs/libyuv.a'
 	s.library = 'yuv'
