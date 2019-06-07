@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
 	s.source          	= { :http => "http://cirepo.bs2dl.yy.com/sdks/ios/argo/2.0.0/argo.zip" }
 	s.summary      		= 'argo sdk.'
 	s.platform        	= :ios, '8.0'
-	s.source_files 		= 'include/**/*'
 	s.vendored_libraries 	= 'libs/libargo.a'
 	s.xcconfig       	= { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/argo/libs"' }
     	s.header_mappings_dir 	= 'include'
