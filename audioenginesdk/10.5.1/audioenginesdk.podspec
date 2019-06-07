@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
 		ss.dependency 'audiocodec', '10.1.26-dev'
 ss.dependency 'audiodsp', '1.2.4-dev'
 	    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/audioenginesdk/include', 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/audioenginesdk/libs" }
-	    ss.source_files		= 'include/**/*.h','include/*.h'
 	    ss.header_mappings_dir = 'include'
 	    ss.vendored_library = 'libs/libaudio_static.a'
 	    ss.library = 'audio_static'
@@ -22,7 +21,6 @@ ss.dependency 'audiodsp', '1.2.4-dev'
     
     s.subspec 'yyaudiodynamicsdk' do |sy|
     	sy.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/audioenginesdk/include', 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
-    	sy.source_files		= 'include/**/*.h','include/*.h'
     	sy.header_mappings_dir = 'include'
     	sy.ios.vendored_frameworks = 'libs/audio_wrapper.framework'
     end
@@ -31,7 +29,6 @@ ss.dependency 'audiodsp', '1.2.4-dev'
 		ss.dependency 'audiocodec', '10.1.26-dev'
 ss.dependency 'audiodsp', '1.2.4-dev'
 	    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/audioenginesdk/include', 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/audioenginesdk/libs" }
-	    ss.source_files		= 'include/**/*.h','include/*.h'
 	    ss.header_mappings_dir = 'include'
 	    ss.vendored_library = 'libs/libaudio_static-macOS.a'
 	    ss.library = 'audio_static-macOS'
@@ -39,7 +36,6 @@ ss.dependency 'audiodsp', '1.2.4-dev'
     
     s.subspec 'yyaudiodynamicsdk_mac' do |sy|
     	sy.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/audioenginesdk/include', 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
-    	sy.source_files		= 'include/**/*.h','include/*.h'
     	sy.header_mappings_dir = 'include'
     	sy.osx.vendored_frameworks = 'libs/audio_wrapper_macOS.framework'
     end
