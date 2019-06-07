@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.author       = { 'yy' => 'yypm@yy.com' }
 	s.source       = { :http => "http://cirepo.bs2dl.yy.com/sdks/ios/yylivesdk4cloud/2.0.2/yylivesdk4cloud.zip" }
 	
-	s.default_subspec = 'yylivesdk4clouddynamic'
+	s.default_subspec = 'yylivesdk4cloud'
 	s.subspec 'yylivesdk4cloud' do |full|
 		full.platform = :ios, '4.3'
 		full.ios.deployment_target = '4.3'
