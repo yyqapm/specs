@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
 	s.author       = { "zhangjunhai1" => "zhangjunhai1@yy.com" }
 	s.source       = {:http => "http://cirepo.bs2dl.yy.com/sdks/ios/dwx265/2.0.3/dwx265.zip"}
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/dwx265/include', 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/dwx265/libs" }
-	s.source_files		= 'include/**/*.h','include/*.h'
 	s.header_mappings_dir = 'include'
 	s.vendored_library = 'libs/libdwx265.a'
 	s.library = 'dwx265'
