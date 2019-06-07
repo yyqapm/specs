@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
 
 	s.default_subspec = 'gslbsdki'
 	s.subspec 'gslbsdki' do |ss|
-		ss.source_files	= 'include/**/*.h'
 		ss.header_mappings_dir = 'include'
 		ss.vendored_library = 'libs/libgslbsdki.a'
     	ss.library = 'gslbsdki'
@@ -33,7 +32,6 @@ Pod::Spec.new do |s|
 	    	'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'
 		}
 		sx.ios.deployment_target	= '6.0'
-		sx.source_files = 'include/**/*.h'
 	    sx.header_mappings_dir = 'include'
 	    sx.dependency 'FMDB'
     	sx.dependency 'CocoaAsyncSocket'
