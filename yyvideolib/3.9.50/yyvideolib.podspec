@@ -24,7 +24,6 @@ Pod::Spec.new do |s|
 	end
 
 	s.subspec 'yyvideolibstatic' do |sz|
-		sz.source_files = 'include/yyvideolibstatic/*.h'
     	sz.resource = 'resource/yyvideolibstatic/yyvideolib.bundle'
 		sz.vendored_library = 'libs/libyyvideolibstatic.a'
 		sz.library = 'yyvideolibstatic'
@@ -32,7 +31,6 @@ Pod::Spec.new do |s|
 	end
 
 	s.subspec 'yyvideolibplayer' do |sy|
-		sy.source_files = 'include/yyvideolibplayer/*.h'
     	sy.resource = 'resource/yyvideolibplayer/yyvideolib.bundle'
 		sy.vendored_library = 'libs/libyyvideolibplayer.a'
 		sy.library = 'yyvideolibplayer'
@@ -40,7 +38,6 @@ Pod::Spec.new do |s|
 	end
 
 	s.subspec 'yyvideolibshower' do |sx|
-		sx.source_files = 'include/yyvideolibshower/*.h'
     	sx.resource = 'resource/yyvideolibshower/yyvideolib.bundle'
 		sx.vendored_library = 'libs/libyyvideolibshower.a'
 		sx.library = 'yyvideolibshower'
@@ -54,7 +51,6 @@ Pod::Spec.new do |s|
 	end
 
 	s.subspec 'yyvideolibstatic_nobeauty' do |sv|
-		sv.source_files = 'include/yyvideolibstatic_nobeauty/*.h'
     	sv.resource = 'resource/yyvideolibstatic_nobeauty/yyvideolib.bundle'
 		sv.vendored_library = 'libs/libyyvideolibstatic_nobeauty.a'
 		sv.library = 'yyvideolibstatic_nobeauty'
