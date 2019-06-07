@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
 
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ittiamhevc/include', 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/ittiamhevc/libs" }
 
-	s.source_files		= 'include/*.h'
 	s.header_mappings_dir = 'include'
 	s.vendored_library = 'libs/libittiamhevc.a'
 	s.library = 'ittiamhevc'
