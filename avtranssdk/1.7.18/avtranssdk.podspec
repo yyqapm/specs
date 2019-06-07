@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
 	s.platform     = :ios, '4.3'
     s.ios.deployment_target = '4.3'
     s.requires_arc = true
-    s.source_files = 'include/**/*.h'
 	s.vendored_library = 'libs/libtranssdk.a'
 	s.library = 'transsdk'
 	s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/avtranssdk/libs"' }
