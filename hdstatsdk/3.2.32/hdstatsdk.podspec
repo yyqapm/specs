@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
       ss.platform     = :ios, '6.0'
       ss.ios.deployment_target = '6.0'
       ss.requires_arc = true
-      ss.source_files = 'include/**/*.h'
       ss.vendored_library = 'libs/*.a'
       ss.library = 'HiidoSDK'
       ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/hdstatsdk/libs"' }
@@ -25,7 +24,6 @@ Pod::Spec.new do |s|
   
     s.subspec 'HiidoSDKDynamic' do |sy|
       sy.xcconfig     = {'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
-      sy.source_files = 'include/**/*.h'
       sy.ios.vendored_frameworks = 'libs/*.framework'
     end
 
