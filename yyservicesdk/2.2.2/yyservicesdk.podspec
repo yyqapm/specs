@@ -18,7 +18,6 @@ sw.dependency 'yyaccesstranssdk', '1.2.1'
     sw.requires_arc = true
     sw.frameworks = 'SystemConfiguration'
     sw.libraries = 'c++','z'
-    sw.source_files = 'include/**/*.h'
     sw.ios.vendored_library = 'libs/libyyservicesdk.a'
   end
   s.subspec 'yyservicesdk-dynamic' do |sx|
@@ -27,7 +26,6 @@ sx.dependency 'yyaccesstranssdk', '1.2.1'
     sx.requires_arc = true
     sx.frameworks = 'SystemConfiguration'
     sx.libraries = 'c++','z'
-    sx.source_files = 'include/**/*.h'
     sx.ios.vendored_frameworks = 'libs/yyservicesdk_dynamic.framework'
   end
 end
