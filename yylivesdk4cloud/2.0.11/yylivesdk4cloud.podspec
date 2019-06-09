@@ -30,6 +30,7 @@ full.dependency 'orangefilter/orangefilter_static-all_no_ar', '4.1.5'
 full.dependency 'yyservicesdk/yyservicesdk', '2.2.2'
 full.dependency 'yyvideolib/yyvideolibstatic', '3.9.50'
 		full.requires_arc = true
+                full.frameworks = 'VideoToolbox'
 		full.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/yylivesdk4cloud/libs"' }
 		full.source_files = 'include/yylivesdk4cloud/*.h'
 		full.vendored_libraries = 'libs/libyylivesdk4cloud.a'
@@ -43,6 +44,7 @@ full.dependency 'yyvideolib/yyvideolibstatic', '3.9.50'
 dy.dependency 'hdstatsdk/HiidoSDKDynamic', '3.2.32'
 dy.dependency 'yyservicesdk/yyservicesdk', '2.2.2'
 		dy.requires_arc = true
+                dy.frameworks = 'VideoToolbox'
 		dy.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
 		dy.preserve_paths  = 'libs/yylivesdk4clouddynamic/yylivesdk4clouddynamic.framework'
 		dy.ios.vendored_frameworks = 'libs/yylivesdk4clouddynamic.framework'
@@ -51,8 +53,8 @@ dy.dependency 'yyservicesdk/yyservicesdk', '2.2.2'
 	s.subspec 'yylivesdk4clouddynamicaudio' do |ydaudio|
 		ydaudio.platform = :ios, '4.3'
 		ydaudio.ios.deployment_target = '4.3'
-		
 		ydaudio.requires_arc = true
+                ydaudio.frameworks = 'AudioToolbox', 'CoreMedia', 'AVFoundation'
 		ydaudio.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks' }
 		ydaudio.preserve_paths  = 'libs/yylivesdk4clouddynamicaudio/yylivesdk4clouddynamicaudio.framework'
 		ydaudio.ios.vendored_frameworks = 'libs/yylivesdk4clouddynamicaudio.framework'
@@ -67,6 +69,7 @@ audio.dependency 'avtranssdk', '1.7.18'
 audio.dependency 'gslbsdki', '1.3.2'
 audio.dependency 'openssl', '111.6717.0'
 		audio.requires_arc = true
+                audio.frameworks = 'AudioToolbox', 'CoreMedia', 'AVFoundation'
 		audio.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/yylivesdk4cloud/libs"' }
 		audio.source_files = 'include/yylivesdk4cloud-audio/*.h'
 		audio.vendored_libraries = 'libs/libyylivesdk4cloud-audio.a'
