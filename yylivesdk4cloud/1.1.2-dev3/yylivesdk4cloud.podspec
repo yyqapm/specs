@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-	s.name         = 'yylivesdk4cloudxxx'
+	s.name         = 'yylivesdk4cloud'
 	s.version      = '1.1.2-dev3'
 	s.summary      = 'yylivesdk4cloud'
 	s.homepage     = 'http://www.yy.com/'
