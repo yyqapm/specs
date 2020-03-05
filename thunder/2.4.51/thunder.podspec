@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
       LICENSE
     }
 	s.author       = { 'yy' => 'yypm@yy.com' }
-	s.source       = { :http => "http://repo.yy.com/dwbuild/mobile/ios/thunder/THUNDER_2.4.51_REL/20200304-769-r1444e347cf5d751aef69abd4e9723e304bad2e96//thunder.zip" }
+	s.source       = { :http => "http://cirepo.bs2dl.yy.com/sdks/ios/thunder/2.4.51/thunder.zip" }
 	
 	s.default_subspec = 'thunderbolt'
 	s.subspec 'thunderbolt' do |full|
