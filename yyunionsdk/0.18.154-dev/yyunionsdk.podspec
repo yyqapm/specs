@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     }
 	s.author       = { 'yy' => 'yypm@yy.com' }
 	s.platform     = :ios, "9.0"
-	s.source       = { :http => "http://cirepo.bs2dl.yy.com/sdks/ios/yyunionsdk/0.18.154-dev/yyunionsdk.zip" }
+	s.source       = { :http => "https://cirepo.bs2dl.yy.com/sdks/ios/yyunionsdk/0.18.154-dev/yyunionsdk.zip" }
 	
 	s.ios.frameworks = 'VideoToolbox', 'metalkit', 'metalperformanceshaders'
 	s.ios.libraries = 'bz2', 'iconv', 'resolv'
