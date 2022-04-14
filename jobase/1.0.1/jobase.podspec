@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.source = { :http => "https://cirepo.bs2dl.yy.com/sdks/ios/jobase/1.0.1/jobase.zip" }
 
   s.default_subspec = 'jobase'
-
   s.subspec 'jobase' do |jobase|
     jobase.platform = :ios, '4.3'
     jobase.ios.deployment_target = '4.3'
